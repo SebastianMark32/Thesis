@@ -1,0 +1,9 @@
+hr {
+    border: 0;
+    height: 5px;
+    background-color: lightgray;
+  }
+  .custom-select-panel {
+    margin-top: 10px; 
+    max-height: 200px;
+  }
