@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
-
+import { TableauEmbeddedVizComponent } from '../tableau-embedded-viz/tableau-embedded-viz.component';
 declare const window: any;
 
 @Component({
@@ -16,7 +16,8 @@ declare const window: any;
     FormsModule,  
     MatFormFieldModule,
     MatInputModule, 
-    MatSelectModule
+    MatSelectModule,
+    TableauEmbeddedVizComponent
   ]
 })
 export class VisualComponent implements OnInit, AfterViewInit {
