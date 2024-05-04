@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, OnInit, Input, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 
 @Component({
   selector: 'app-tableau-embedded-viz',
@@ -14,12 +14,11 @@ export class TableauEmbeddedVizComponent implements OnInit{
   // Inherit attributes from the parent component
   @Input() dashboardIndex = 0;
   @Input() toolbar = 'hidden';
-  @Input() vizUrl = 'https://public.tableau.com/views/DayStrainVSSleepPerfomance/DayStrainVSSleepPerformance?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link';
+  @Input() vizUrl = '';
 
   // Dashboard properties
   public VizIndex = 'Tableau-Viz-' + this.dashboardIndex;
 
   ngOnInit(): void {
   }
-
 }

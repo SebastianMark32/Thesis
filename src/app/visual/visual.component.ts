@@ -20,9 +20,11 @@ declare const window: any;
   ]
 })
 export class VisualComponent {
-  
-  selectedGraph: number = 0; 
+
+  selectedGraph: string = ''; 
   showTableauViz: boolean = false;
+
+  graph1Url = 'https://public.tableau.com/views/DayStrainVSSleepPerfomance/DayStrainVSSleepPerformance?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link';
   
 }
 

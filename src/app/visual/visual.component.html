@@ -44,16 +44,14 @@
   <mat-form-field appearance="fill">
     <mat-label>Graphs</mat-label>
     <mat-select required [(value)]="selectedGraph">
-      <mat-option value="1">Daily Strain vs Sleep Performance</mat-option>
+      <mat-option value="https://public.tableau.com/views/DayStrainVSSleepPerfomance/DayStrainVSSleepPerformance?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link">Daily Strain vs Sleep Performance</mat-option>
       <mat-option value="2">Sleep Efficiency VS Awake</mat-option>
       <mat-option value="3">Awake Duration VS Sleep Need</mat-option>
-      <mat-option value="4">Total Sleep Perfomance</mat-option>
+      <mat-option value="https://public.tableau.com/views/TotalSleepPerformance/Sheet1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link">Total Sleep Perfomance</mat-option>
     </mat-select>
   </mat-form-field>
 </div>
-{{selectedGraph}} 
 <div>
-  <app-tableau-embedded-viz>
-    
+  <app-tableau-embedded-viz [vizUrl]='selectedGraph'>
   </app-tableau-embedded-viz>
 </div>
