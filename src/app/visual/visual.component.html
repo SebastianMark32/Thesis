@@ -43,19 +43,17 @@
 <div style="text-align: center;">
   <mat-form-field appearance="fill">
     <mat-label>Graphs</mat-label>
-    <mat-select required>
-      <mat-option value="Graph 1">Daily Strain vs Sleep Performance</mat-option>
-      <mat-option value="Graph 2">Sleep Efficiency VS Awake</mat-option>
-      <mat-option value="Graph 3">Awake Duration VS Sleep Need</mat-option>
-      <mat-option value="Graph 4">G4</mat-option>
+    <mat-select required [(value)]="selectedGraph">
+      <mat-option value="1">Daily Strain vs Sleep Performance</mat-option>
+      <mat-option value="2">Sleep Efficiency VS Awake</mat-option>
+      <mat-option value="3">Awake Duration VS Sleep Need</mat-option>
+      <mat-option value="4">Total Sleep Perfomance</mat-option>
     </mat-select>
   </mat-form-field>
 </div>
-
+{{selectedGraph}} 
 <div>
   <app-tableau-embedded-viz>
     
   </app-tableau-embedded-viz>
 </div>
-
-
